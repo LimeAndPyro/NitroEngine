@@ -1,3 +1,4 @@
 # NitroEngine (WIP)
-Open source VRChat Mod
+Open source free VRChat Mod
+
 ![alt text](https://raw.githubusercontent.com/ScrimCreations/NitroEngine/master/NitroFull.png)
