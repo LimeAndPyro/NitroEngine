@@ -16,7 +16,8 @@ namespace NitroEngine
     {
         public override void OnApplicationStart()
         {
-            
+            MelonCoroutines.Start(OnVRCUI());
+            MelonCoroutines.Start(OnGameInit());
         }
 
         public override void OnUpdate()
@@ -28,6 +29,31 @@ namespace NitroEngine
         {
 
         }
+         public IEnumerator OnGameInit() 
+        { 
+            while (GameObject.Find("UserInterface") == null) yield return null;
+            GameInit();
+            yield break;
+        }
+
+        public void GameInit()
+        {
+            
+            
+        }
+        //
+        public IEnumerator OnVRCUI()
+        {
+            while (GameObject.Find("UserInterface/Canvas_QuickMenu(Clone)") == null) yield return null; //If Qm Exists
+            new WaitForSeconds(0.7f);//Waits to Prevent Breakage
+            UIIsInit();//Calls UI Changes
+            yield break;//Breaks Statement
+        }
+        //
+        public void UIIsInit()
+        {
+           
+        }
 
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
@@ -38,5 +64,6 @@ namespace NitroEngine
         {
             
         }
+        
     }
 }
