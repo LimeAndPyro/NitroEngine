@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82CD59B1-00AB-4768-AA23-C050ED6AF9D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NitroEngine</RootNamespace>
+    <AssemblyName>NitroEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerRuntimeLib">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\UnhollowerRuntimeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Collections">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Dynamics">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Dynamics.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDK3.Dynamics.Contact">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.SDK3.Dynamics.Contact.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDK3.Dynamics.PhysBone">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.SDK3.Dynamics.PhysBone.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDKBase.Editor.BuildPipeline">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.SDKBase.Editor.BuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.ClientBindings">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.ClientBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Common">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Security">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Serialization.AOT">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.Serialization.AOT.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Serialization.OdinSerializer">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.Serialization.OdinSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.VM">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.VM.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.VRCWrapperModules">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.VRCWrapperModules.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Wrapper">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.Wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Core">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Elements">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Elements.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Shared">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Utility">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRC.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCCore-Editor">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRCCore-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCCore-Standalone">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRCCore-Standalone.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCLog">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRCLog.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK2">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK2.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK3">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK3.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK3A">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK3A.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDKBase">
+      <HintPath>B:\SteamLibrary\steamapps\common\VRChat\MelonLoader\Managed\VRCSDKBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\NitroConsole.cs" />
+    <Compile Include="Core\NitroPatches.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Menus\" />
+    <Folder Include="NitroModules\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
